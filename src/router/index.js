@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { praticeRouter } from './practiceRouter';
+import { practiceRouter } from './practiceRouter';
 
 // url경로와 화면을 매핑
 const routes = [
-  ...praticeRouter
+  ...practiceRouter
 ]
 
 const router = createRouter(

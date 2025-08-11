@@ -1,11 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { memberRouter } from './memberRouter';
 import { practiceRouter } from './practiceRouter';
+import { orderRouter } from './orderRouter';
 
 // url경로와 화면을 매핑
 const routes = [
   ...memberRouter,
-  ...practiceRouter
+  ...practiceRouter,
+  ...orderRouter,
 ]
 
 const router = createRouter(

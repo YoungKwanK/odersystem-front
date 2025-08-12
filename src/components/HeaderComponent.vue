@@ -7,7 +7,7 @@
         <v-col class="d-flex justy-start">
           <div v-if="userRole === 'ADMIN'">
             <v-btn :to="'/member/list'">회원관리</v-btn>
-            <v-btn>상품관리</v-btn>
+            <v-btn :to="'/product/manage'">상품관리</v-btn>
             <v-btn :to="'/order/list'">실시간주문건수</v-btn>
           </div>
         </v-col>
@@ -16,7 +16,7 @@
         </v-col>
         <v-col class="d-flex justy-end">
           <v-btn v-if="isLogined">장바구니</v-btn>
-          <v-btn>상품목록</v-btn>
+          <v-btn :to="'/product/list'">상품목록</v-btn>
           <v-btn v-if="isLogined" :to="'/member/mypage'">마이페이지</v-btn>
           <v-btn v-if="!isLogined" :to="'/member/create'">회원가입</v-btn>
           <v-btn v-if="!isLogined" :to="'/member/login'">로그인</v-btn>

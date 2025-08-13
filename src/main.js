@@ -7,6 +7,7 @@ import vuetify from "./plugins/vuetify";
 import "@mdi/font/css/materialdesignicons.css";
 import axios from "axios";
 import { getResultData } from "./utils/commonDataHandler";
+import store from "./store";
 
 const app = createApp(App);
 
@@ -49,6 +50,7 @@ axios.interceptors.response.use(
     }
 )
 
+app.use(store);
 app.use(vuetify);
 app.use(router);
 app.mount("#app");

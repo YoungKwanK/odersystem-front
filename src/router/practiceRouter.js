@@ -6,6 +6,7 @@ import VuetifyComponent from "@/components/practice/4.VuetifyComponent.vue";
 import RouteComponent from "@/components/practice/5.RouteComponent.vue";
 import RouteComponent2 from "@/components/practice/5.RouteComponent2.vue";
 import RouteComponent3 from "@/components/practice/5.RouteComponent3.vue";
+import StoreTestComponent from "@/components/practice/6.StoreTestComponent.vue";
 
 export const practiceRouter = [
     {
@@ -47,5 +48,10 @@ export const practiceRouter = [
         path: "/practice/route3/:postId"
         , name: "RouteComponent3"
         , component: RouteComponent3
+    }
+    , {
+        path: "/practice/store"
+        , name: "StoreTestComponent"
+        , component: StoreTestComponent
     }
 ]
